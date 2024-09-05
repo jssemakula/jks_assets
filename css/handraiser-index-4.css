@@ -1,0 +1,1310 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700&display=swap";
+
+*, :before, :after {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/Proxima+Nova+Thin.otf?v=1597674129000)format("opentype"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanovathin-webfont.woff2?v=1597675450000)format("woff2"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanovathin-webfont.woff?v=1597675441000)format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/ProximaNova-Regular.otf?v=1597674184000)format("opentype"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanova-regular-webfont.woff2?v=1597675557000)format("woff2"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanova-regular-webfont.woff?v=1597675556000)format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/Proxima+Nova+Alt+Bold.otf?v=1597674993000)format("opentype"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanovaaltbold-webfont.woff2?v=1597675660000)format("woff2"), url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2214/proximanovaaltbold-webfont.woff?v=1597675659000)format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+body.fa {
+    /*background-color: #fff;*/
+    background-color: #440099;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 87px 0 0;
+    padding: 0;
+    font-family: ProximaNova, sans-serif;
+    font-size: 16px;
+    position: relative
+}
+
+@media (max-width:767px) {
+    body.fa {
+        /*background-color: #fff;*/
+        background-color: #440099;
+        background-image: none !important
+    }
+}
+
+body.fa form.en__component--page {
+    z-index: 1
+}
+
+body.fa form.en__component--page>.slide-wrapper:not(:first-of-type) {
+    display: none
+}
+
+body.fa .header {
+    width: 100%;
+    z-index: 100;
+    /*background-color: #fff;*/
+    background-color: #440099;
+    border-bottom: 1px solid #440099;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 20px 15px;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+@media (max-width:767px) {
+    body.fa .header {
+        padding: 20px 15px 15px
+    }
+}
+
+body.fa .header .header-inner {
+    width: 1160px;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+
+body.fa .header .logo {
+    width: 140px;
+    max-width: 100%;
+    display: block
+}
+
+@media (max-width:767px) {
+    body.fa .header .logo {
+        margin: 0 auto
+    }
+
+    body.fa .en__component--row, body.fa .en__component--row.en__component--advrow {
+        display: block
+    }
+
+    body.fa .en__component--column.en__component--advcolumn, body.fa .en__component--row--2 .en__component--column {
+        width: 100%
+    }
+}
+
+body.fa .en__component--column {
+    padding: 0 40px
+}
+
+body.fa .en__component--column.col-left {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 40px;
+    font-family: Assistant, "sans-serif";
+    display: -ms-flexbox;
+    display: flex
+}
+
+body.fa .en__component--column.aluk-left {
+
+background-color: #fff;	
+
+}
+
+body.fa .en__component--column.col-left .en__component--imageblock {
+    min-height: 1px;
+    border-radius: 1px;
+    margin: 0 0 10px
+}
+
+@media (min-width:767px) and (max-width:1025px) {
+    body.fa .en__component--column.col-left {
+        padding: 0 20px
+    }
+}
+
+@media (max-width:767px) {
+    body.fa .en__component--column.col-left {
+        background-color: #fff;
+        padding: 0
+    }
+
+    body.fa .en__component--column.col-left .fa-read-more-toggle {
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    body.fa .en__component--column.col-left .en__component--imageblock {
+        -ms-flex-order: 3;
+        order: 3;
+        margin: 10px -15px 20px
+    }
+
+    body.fa .en__component--column.col-left .en__component--imageblock img {
+        object-fit: cover;
+        height: 220px !important
+    }
+}
+
+@media (max-width:500px) {
+    body.fa .en__component--column.col-left .en__component--imageblock .en__component--imageblock img {
+        height: 139px !important
+    }
+}
+
+body.fa .col-right {
+    color: #fff;
+    max-width: 460px;
+    background: #fff;
+    border: 2px solid #f3f3f3;
+    border-radius: 4px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 25px 40px;
+    font-family: Assistant, "sans-serif";
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15)
+}
+
+@media (max-width:767px) {
+    body.fa .col-right {
+        background-color: none;
+        box-shadow: none;
+        max-width: 100%;
+        border: none;
+        padding: 0
+    }
+}
+
+body.fa .col-right p {
+    color: #414141
+}
+
+body.fa .col-right .en__component--copyblock:nth-child(2) p:first-of-type {
+    margin: 10px 0
+}
+
+body.fa .col-right p.large {
+    margin: 15px 0 25px
+}
+
+@media (max-width:767px) {
+    body.fa .col-right p.large {
+        margin: 0 0 15px
+    }
+}
+
+body.fa form:not([action*="/petition/2"]) {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative
+}
+
+@media (max-width:767px) {
+    body.fa form:not([action*="/petition/2"]) {
+        background-image: none !important
+    }
+}
+
+body.fa .slide-wrapper {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+@media (max-width:767px) {
+    body.fa .slide-wrapper {
+        background-image: none !important
+    }
+}
+
+body.fa .slide-wrapper .en__component--row {
+    min-height: 100vh;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 90px
+}
+
+@media (max-width:767px) {
+    body.fa .slide-wrapper .en__component--row {
+        padding: 35px 15px 90px
+    }
+}
+
+body.fa .slide-wrapper .en__component--row {
+    min-height: calc(100vh - 87px)
+}
+
+body.fa form[action*="/petition/2"] .slide-wrapper:first-of-type .en__component--row {
+    padding-bottom: 23px
+}
+
+@media (max-width:767px) {
+    body.fa form[action*="/petition/2"] .slide-wrapper:first-of-type .en__component--row {
+        padding-bottom: 84px
+    }
+}
+
+body.fa .slide-wrapper:nth-of-type(n+2) .en__component--row {
+    display: block
+}
+
+body.fa .en__component--column.slide-content {
+    width: 760px;
+    max-width: 100%;
+    /*background-color: #fff;*/
+    background-color: #f5f5f5;
+    /*background-color: #FFF0CC;*/ 
+    border-radius: 4px;
+    -ms-flex: 0 0 760px;
+    flex: 0 0 760px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 60px auto 0;
+    padding: 30px 30px 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+	color: #373737;	
+}
+
+body.fa .en__component--column.slide-content p {
+	color: #373737;		
+}
+
+@media (max-width:767px) {
+    body.fa .en__component--column.slide-content {
+        box-shadow: none;
+        margin: 0;
+        padding: 20px 0 0
+    }
+
+    body.fa .en__component--column.slide-content h2, body.fa .en__component--column.slide-content p {
+        text-align: left !important
+		color: #373737;
+    }
+}
+
+body.fa form[action*="/action/3"] .slide-wrapper .en__component--row {
+    min-height: calc(100vh - 87px)
+}
+
+body.fa img.slide-background {
+    /* display: none */
+}
+
+body.fa .fb-preview {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto
+}
+
+body.fa .fb-preview__image {
+    max-height: 350px;
+    overflow: hidden
+}
+
+body.fa .fb-preview__image img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block
+}
+
+body.fa .fb-preview__text {
+    text-align: left;
+    background: #e5e7e9;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 15px
+}
+
+body.fa .fb-preview__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+body.fa .fb-preview__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px
+}
+
+body.fa .fa-read-more-toggle {
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    display: none;
+    position: relative
+}
+
+@media (max-width:767px) {
+    body.fa .fa-read-more-toggle {
+        cursor: pointer;
+        color: #ff4a14;
+        margin-bottom: 15px;
+        font-weight: 700;
+        display: inline-block
+    }
+}
+
+body.fa .fa-read-more-toggle span {
+    height: 10%;
+    width: 23px;
+    height: 3px;
+    background: #ff4a14;
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 13px;
+    left: 115px;
+    right: 25%
+}
+
+body.fa .fa-read-more-toggle span:first-child {
+    transform: rotate(90deg)
+}
+
+body.fa .fa-read-more-toggle.open span:first-child {
+    transform: initial
+}
+
+body.fa .fa-read-more-toggle.toggle-desktop {
+    cursor: pointer;
+    color: #ff4a14;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-bottom: 65px;
+    font-weight: 700;
+    display: inline-block
+}
+
+@media (max-width:767px) {
+    body.fa .fa-read-more-toggle.toggle-desktop {
+        margin-bottom: 15px
+    }
+
+    body.fa .fa-read-more {
+        display: none
+    }
+
+    body.fa .fa-read-more :first-child {
+        margin-top: 0
+    }
+}
+
+body.fa .fa-read-more.fa-read-more-desktop {
+    display: none
+}
+
+body.fa .fa-read-more.fa-read-more-desktop :first-child {
+    margin-top: 0
+}
+
+body.fa .footer-outer {
+    display: none
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer {
+    z-index: 0;
+    height: 125px;
+    display: block;
+    position: relative
+}
+
+@media (max-width:767px) {
+    body.fa form[action*="/petition/2"]~.footer-outer {
+        height: 175px
+    }
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer {
+    text-align: center;
+    z-index: 1;
+    z-index: 0;
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Assistant, "sans-serif";
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer:before, body.fa form[action*="/petition/2"]~.footer-outer footer:after {
+    background: inherit;
+    content: "";
+    height: 85%;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer:before {
+    transform-origin: 0 0;
+    top: 0;
+    transform: skewY(-4deg)
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer:after {
+    transform-origin: 100%;
+    bottom: 0;
+    transform: skewY(0)
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer .footer-inner {
+    padding-top: 75px
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer ul {
+    padding: 0
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer ul a {
+    color: #fff;
+    text-decoration: none
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer li {
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 700;
+    display: inline-block
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer li:first-child {
+    margin-left: 0
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer li:last-child {
+    margin-right: 0
+}
+
+body.fa form[action*="/petition/2"]~.footer-outer footer p {
+    font-size: 12px
+}
+
+body.fa .has-errors .en__errorHeader {
+    padding: 20px 15px 0
+}
+
+body.fa .has-errors .en__errorList {
+    min-height: calc(100vh - 297px);
+    padding: 0 15px 0 30px
+}
+
+body.fa h1 {
+    letter-spacing: .2px;
+    font-family: ProximaNova, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px
+}
+
+@media (max-width:767px) {
+    body.fa h1 {
+        font-size: 26px;
+        line-height: 30px
+    }
+}
+
+body.fa h2 {
+    font-size: 25px;
+    line-height: 46px
+}
+
+@media (max-width:767px) {
+    body.fa h2 {
+        font-size: 28px;
+        line-height: 30px
+    }
+}
+
+body.fa h2, body.fa h3, body.fa h4, body.fa h5, body.fa h6 {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.27
+}
+
+body.fa p {
+    letter-spacing: .171429px;
+    /*color: #fff;*/
+    color: #fff;
+    font-family: Assistant, sans-serif;
+    font-size: 18px;
+    line-height: 23px
+}
+
+body.fa p strong {
+    font-weight: 700
+}
+
+body.fa p.large {
+    letter-spacing: .228571px;
+    font-size: 24px
+}
+
+body.fa .en__component--copyblock {
+    color: #fff;
+    line-height: 1.4
+}
+
+@media (max-width:767px) {
+    body.fa .en__component--copyblock :first-child {
+        margin-top: 0
+    }
+}
+
+body.fa .en__component--copyblock h1 {
+    margin-top: 0
+}
+
+body.fa .small-print p {
+    letter-spacing: .12381px;
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 1.38
+}
+
+body.fa .small-print a {
+    color: inherit
+}
+
+body.fa .slide-content h2 {
+    margin-top: 10px;
+	color: #373737;
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input, body.fa .en__field--select.en__field--withOther .en__field__element .en__field__input, body.fa .en__field--select .en__field__element .en__field__input, body.fa .en__field--calendar .en__field__element .en__field__input, body.fa .en__field--textarea .en__field__element .en__field__input, body.fa .en__field--text .en__field__element .en__field__input, body.fa .en__field--password .en__field__element .en__field__input, body.fa .en__field--email .en__field__element .en__field__input, body.fa .en__field--telephone .en__field__element .en__field__input, body.fa .en__field--number .en__field__element .en__field__input {
+    width: 100%;
+    color: #fff;
+    background-color: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 21px 10px 4px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 17px;
+    line-height: 23px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input::-webkit-input-placeholder, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input::-webkit-input-placeholder, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input::-webkit-input-placeholder, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input::-webkit-input-placeholder, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input::-webkit-input-placeholder, body.fa .en__field--select.en__field--withOther .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--select .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--calendar .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--textarea .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--text .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--password .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--email .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--telephone .en__field__element .en__field__input::-webkit-input-placeholder, body.fa .en__field--number .en__field__element .en__field__input::-webkit-input-placeholder {
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+    font-size: 18px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input:-moz-placeholder, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input:-moz-placeholder, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input:-moz-placeholder, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input:-moz-placeholder, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input:-moz-placeholder, body.fa .en__field--select .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--calendar .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--textarea .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--text .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--password .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--email .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--telephone .en__field__element .en__field__input:-moz-placeholder, body.fa .en__field--number .en__field__element .en__field__input:-moz-placeholder {
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+    font-size: 18px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input::-moz-placeholder, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input::-moz-placeholder, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input::-moz-placeholder, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input::-moz-placeholder, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input::-moz-placeholder, body.fa .en__field--select.en__field--withOther .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--select .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--calendar .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--textarea .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--text .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--password .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--email .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--telephone .en__field__element .en__field__input::-moz-placeholder, body.fa .en__field--number .en__field__element .en__field__input::-moz-placeholder {
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+    font-size: 18px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input:-ms-input-placeholder, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input:-ms-input-placeholder, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input:-ms-input-placeholder, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input:-ms-input-placeholder, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input:-ms-input-placeholder, body.fa .en__field--select .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--calendar .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--textarea .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--text .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--password .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--email .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--telephone .en__field__element .en__field__input:-ms-input-placeholder, body.fa .en__field--number .en__field__element .en__field__input:-ms-input-placeholder {
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+    font-size: 18px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input:focus, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--select .en__field__element .en__field__input:focus, body.fa .en__field--calendar .en__field__element .en__field__input:focus, body.fa .en__field--textarea .en__field__element .en__field__input:focus, body.fa .en__field--text .en__field__element .en__field__input:focus, body.fa .en__field--password .en__field__element .en__field__input:focus, body.fa .en__field--email .en__field__element .en__field__input:focus, body.fa .en__field--telephone .en__field__element .en__field__input:focus, body.fa .en__field--number .en__field__element .en__field__input:focus {
+    border: 2px solid #ff4a14;
+    outline: none;
+    padding: 20px 9px 3px 14px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input:focus+label, body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input:focus+label, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input:focus+label, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input:focus+label, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input:focus+label, body.fa .en__field--select .en__field__element .en__field__input:focus+label, body.fa .en__field--calendar .en__field__element .en__field__input:focus+label, body.fa .en__field--textarea .en__field__element .en__field__input:focus+label, body.fa .en__field--text .en__field__element .en__field__input:focus+label, body.fa .en__field--password .en__field__element .en__field__input:focus+label, body.fa .en__field--email .en__field__element .en__field__input:focus+label, body.fa .en__field--telephone .en__field__element .en__field__input:focus+label, body.fa .en__field--number .en__field__element .en__field__input:focus+label {
+    color: #ff4a14
+}
+
+body.fa .en__field {
+    padding-bottom: 14px
+}
+
+@media (max-width:767px) {
+    body.fa .en__field {
+        padding-bottom: 12px
+    }
+}
+
+body.fa .en__field__error {
+    color: red;
+    font-size: 14px
+}
+
+body.fa .en__field--text .en__field__element, body.fa .en__field--password .en__field__element, body.fa .en__field--email .en__field__element, body.fa .en__field--telephone .en__field__element, body.fa .en__field--number .en__field__element {
+    display: block;
+    position: relative
+}
+
+body.fa .en__field--text label, body.fa .en__field--password label, body.fa .en__field--email label, body.fa .en__field--telephone label, body.fa .en__field--number label {
+    color: #5e5e5e;
+    font-family: Open Sans, sans-serif;
+    font-size: 17px;
+    transition: all .12s linear;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: 15px;
+    box-shadow: 0 0 #000
+}
+
+body.fa .en__field--text .en__field__input:focus+label, body.fa .en__field--text label.shrink, body.fa .en__field--password .en__field__input:focus+label, body.fa .en__field--password label.shrink, body.fa .en__field--email .en__field__input:focus+label, body.fa .en__field--email label.shrink, body.fa .en__field--telephone .en__field__input:focus+label, body.fa .en__field--telephone label.shrink, body.fa .en__field--number .en__field__input:focus+label, body.fa .en__field--number label.shrink {
+    font-size: 14px;
+    top: -1px
+}
+
+body.fa .en__field--textarea label {
+    color: #fff;
+    width: 100%;
+    font-size: 14px
+}
+
+body.fa .en__field--textarea .en__field__element {
+    padding: 6px 0;
+    display: block
+}
+
+body.fa .en__field--textarea .en__field__element .en__field__input {
+    height: 150px;
+    resize: none;
+    padding: 15px 10px
+}
+
+body.fa .en__field--calendar .en__field__element {
+    display: block
+}
+
+body.fa .en__field--calendar .en__field__element .en__field__input {
+    padding: 12px 20px
+}
+
+body.fa .en__field--select .en__field__element {
+    display: block
+}
+
+body.fa .en__field--select .en__field__element .en__field__input {
+    height: 46px;
+    padding: 12px 20px
+}
+
+body.fa .en__field--select.en__field--withOther .en__field__element, body.fa .en__field--select.en__field--withOther .en__field__element .en__field__item:not(.en__field__item--other) {
+    display: block
+}
+
+body.fa .en__field--select.en__field--withOther .en__field__element .en__field__item--other {
+    width: 100%
+}
+
+body.fa .en__field--select.en__field--withOther .en__field__element .en__field__item--other input {
+    margin-left: 0
+}
+
+body.fa .en__field--select.en__field--withOther .en__field__element .en__field__input {
+    padding: 12px 14px
+}
+
+body.fa .en__field--select.en__field--withOther .en__field__element .en__field__input:focus {
+    padding: 11px 13px
+}
+
+body.fa .en__field--splitselect .en__field__element, body.fa .en__field--tripleselect .en__field__element, body.fa .en__field--splittext .en__field__element, body.fa .en__field--tripletext .en__field__element {
+    margin: 0 -5px;
+    display: -ms-flexbox;
+    display: flex
+}
+
+body.fa .en__field--splitselect .en__field__element .en__field__item, body.fa .en__field--tripleselect .en__field__element .en__field__item, body.fa .en__field--splittext .en__field__element .en__field__item, body.fa .en__field--tripletext .en__field__element .en__field__item {
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    margin: 0 5px
+}
+
+body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input, body.fa .en__field--splittext .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input {
+    height: 46px
+}
+
+body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input {
+    padding: 12px 14px
+}
+
+body.fa .en__field--splitselect .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--tripletext .en__field__element .en__field__item .en__field__input:focus, body.fa .en__field--tripleselect .en__field__element .en__field__item .en__field__input:focus {
+    padding: 11px 13px
+}
+
+body.fa .custom-radio, body.fa .en__field--radio input[type=radio], body.fa .en__field--checkbox input[type=radio] {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    -webkit-appearance: none;
+    position: absolute
+}
+
+body.fa .custom-radio+label:before, body.fa .en__field--radio input[type=radio]+label:before, body.fa .en__field--checkbox input[type=radio]+label:before {
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #f4f6f8;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -35px
+}
+
+body.fa .custom-radio:checked+label:before, body.fa .en__field--radio input[type=radio]:checked+label:before, body.fa .en__field--checkbox input[type=radio]:checked+label:before {
+    height: 25px;
+    width: 25px;
+    background-color: #ff4a14;
+    border: 6px solid #f4f6f8
+}
+
+body.fa .custom-radio:checked+label.is-selected:after, body.fa .en__field--radio input[type=radio]:checked+label.is-selected:after, body.fa .en__field--checkbox input[type=radio]:checked+label.is-selected:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #6d6d6d;
+    display: block;
+    position: absolute;
+    top: 34px;
+    left: -27px;
+    transform: rotate(90deg)
+}
+
+@media (max-width:767px) {
+    body.fa .custom-radio:checked+label.is-selected:after, body.fa .en__field--radio input[type=radio]:checked+label.is-selected:after, body.fa .en__field--checkbox input[type=radio]:checked+label.is-selected:after {
+        top: 32px
+    }
+}
+
+body.fa .en__field__element--radio>.en__field__item:after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    pointer-events: none;
+    border: .8px solid #979797;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -35px
+}
+
+body.fa .custom-checkbox, body.fa .en__field--radio input[type=checkbox], body.fa .en__field--checkbox input[type=checkbox] {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    -webkit-appearance: none;
+    position: absolute
+}
+
+body.fa .custom-checkbox+label:before, body.fa .en__field--radio input[type=checkbox]+label:before, body.fa .en__field--checkbox input[type=checkbox]+label:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: #dedbdb;
+    display: block;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: -40px
+}
+
+body.fa .custom-checkbox:checked+label:before, body.fa .en__field--radio input[type=checkbox]:checked+label:before, body.fa .en__field--checkbox input[type=checkbox]:checked+label:before {
+    content: "âœ“";
+    color: #ff4a14;
+    text-align: center;
+    padding: 0 3px 0 0;
+    font-size: 25px;
+    font-weight: 700
+}
+
+body.fa .en__field--radio>label.en__field__label, body.fa .en__field--checkbox>label.en__field__label {
+    width: 100%;
+    padding: 0;
+    display: block
+}
+
+body.fa .en__field--radio>label.en__field__label :first-child, body.fa .en__field--checkbox>label.en__field__label :first-child {
+    margin-top: 0
+}
+
+body.fa .en__field--radio>label.en__field__label :last-child, body.fa .en__field--checkbox>label.en__field__label :last-child {
+    margin-bottom: 0
+}
+
+body.fa .en__field--radio label.en__field__label, body.fa .en__field--checkbox label.en__field__label {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 14px
+}
+
+body.fa .en__field--radio label.en__field__label p, body.fa .en__field--checkbox label.en__field__label p {
+    font-size: 14px
+}
+
+body.fa .en__field--radio .en__field__element, body.fa .en__field--checkbox .en__field__element {
+    position: relative
+}
+
+body.fa .en__field--radio .en__field__item, body.fa .en__field--checkbox .en__field__item {
+    margin: 5px 35px 0;
+    position: relative
+}
+
+body.fa .en__field--radio .en__field__element--checkbox .en__field__item, body.fa .en__field--checkbox .en__field__element--checkbox .en__field__item {
+    margin: 10px 40px 0
+}
+
+body.fa .en__field--radio input[type=radio]+label:before, body.fa .en__field--checkbox input[type=radio]+label:before {
+    left: -35px
+}
+
+body.fa .en__field--radio input[type=radio]:focus+label:before, body.fa .en__field--checkbox input[type=radio]:focus+label:before, body.fa .en__field--radio input[type=checkbox]:focus+label:before, body.fa .en__field--checkbox input[type=checkbox]:focus+label:before {
+    outline: auto 2px Highlight;
+    outline: -webkit-focus-ring-color auto 5px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other {
+    width: 100%;
+    margin: 5px 0 0
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input {
+    margin: 0;
+    padding: 12px 14px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other input:focus {
+    padding: 11px 13px
+}
+
+body.fa .en__field--radio.en__field--withOther .en__field__item--other:after {
+    display: none
+}
+
+body.fa input:focus, body.fa button:focus, body.fa a:focus {
+    outline: auto 2px Highlight;
+    outline: -webkit-focus-ring-color auto 5px
+}
+
+body.fa .opt-out-warning {
+    color: #fff;
+    background-color: #6d6d6d;
+    border-radius: 4px;
+    margin: 0 0 20px;
+    padding: 11px 13px;
+    font-size: 13px;
+    line-height: 18px;
+    display: none
+}
+
+body.fa .en__field--opt-in p, body.fa .en__field--reprieve-us-opt-in p {
+    letter-spacing: .12px;
+    font-size: 13px;
+    line-height: 18px
+}
+
+body.fa .en__field__error p {
+    display: none
+}
+
+body.fa .en__submit button {
+    color: #2A2C2E;
+    width: 100%;
+    text-align: center;
+    height: 56px;
+    background-color: #ffb400;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-family: Assistant, "sans-serif";
+    font-size: 21px;
+    font-weight: 700;
+    display: block
+}
+
+body.fa .btn-container {
+    width: 560px;
+    max-width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 40px auto 0;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media (max-width:767px) {
+    body.fa .btn-container {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-line-pack: center;
+        -ms-flex-pack: center;
+        align-content: center;
+        justify-content: center
+    }
+}
+
+body.fa .btn-container .btn {
+    min-width: 250px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media (max-width:400px) {
+    body.fa .btn-container .btn {
+        width: 100%
+    }
+}
+
+body.fa .btn {
+    color: #2A2C2E;
+    text-align: center;
+    background-color: #ffb400;
+    border: none;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 16px 24px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .2s ease-in-out
+}
+
+@media (max-width:767px) {
+    body.fa .btn {
+        margin: 5px 0
+    }
+}
+
+body.fa .btn:hover {
+    cursor: pointer
+}
+
+body.fa .btn-primary, body.fa .btn-donate {
+    background-color: #ffb400;
+}
+
+body.fa .btn-primary:hover, body.fa .btn-donate:hover {
+    background-color: #440099;
+	color:	#fff;
+}
+
+body.fa .btn-light-gray {
+    background-color: #a0a0a0
+}
+
+body.fa .btn-light-gray:hover {
+    background-color: #939393
+}
+
+body.fa .btn-facebook {
+    background-color: #3b5998
+}
+
+body.fa .btn-facebook:hover {
+    background-color: #344e86
+}
+
+body.fa .btn-whatsapp {
+    background-color: #25d366
+}
+
+@media (min-width:767px) {
+    body.fa .btn-whatsapp {
+        display: none
+    }
+}
+
+body.fa .btn-whatsapp:hover {
+    background-color: #21bd5c
+}
+
+body.fa .btn-twitter {
+    background-color: #1da1f2
+}
+
+body.fa .btn-twitter:hover {
+    background-color: #0d95e8
+}
+
+body.fa .text {
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    text-decoration: underline
+}
+
+body.fa .enWidget--progressBar {
+    padding: 0
+}
+
+body.fa .enWidget--progressBar .enWidget__display {
+    padding-right: 12px
+}
+
+body.fa .enWidget--progressBar .enWidget__bar {
+    position: relative
+}
+
+body.fa .enWidget--progressBar .enWidget__progress {
+    min-height: 20px;
+    border-radius: 4px
+}
+
+body.fa .enWidget--progressBar .enWidget__progress:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: 0 100%;
+    background: #e5e5e5;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(-30deg)
+}
+
+body.fa .enWidget--progressBar .enWidget__progress .enWidget__fill {
+    z-index: 2;
+    border-radius: 3px
+}
+
+body.fa .enWidget--progressBar .enWidget__copy--below {
+    border-bottom: 2px solid #f4f6f8;
+    margin: 15px 0 0;
+    padding: 10px 0 5px
+}
+
+@media (max-width:767px) {
+    body.fa .enWidget--progressBar .enWidget__copy--below {
+        border-color: #ff4a14;
+        padding-bottom: 8px
+    }
+}
+
+body.fa .enWidget--progressBar .enWidget__copy--below p:first-of-type {
+    margin: 0 0 15px;
+    font-size: 54px;
+    font-weight: 700
+}
+
+@media (max-width:767px) {
+    body.fa .enWidget--progressBar .enWidget__copy--below p:first-of-type {
+        font-size: 42px
+    }
+}
+
+body.fa .enWidget--progressBar .enWidget__copy--below p {
+    color: #414141;
+    letter-spacing: .2px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400
+}
+
+body.fa .progress-bar {
+    width: 100%;
+    z-index: 2147483647;
+    background-color: #440099;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 15px;
+    font-family: Assistant, "sans-serif";
+    transition: all .35s;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media (max-width:767px) {
+    body.fa .progress-bar {
+        border-top: 2px solid #ff4a14
+    }
+}
+
+body.fa .progress-bar.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+body.fa .progress-bar.hide {
+    bottom: -100%
+}
+
+body.fa form[action*="/petition/2"]~.progress-bar {
+    display: none
+}
+
+body.fa .progress-bar__inner {
+    max-width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media (max-width:767px) {
+    body.fa .progress-bar__inner {
+        width: 500px
+    }
+}
+
+body.fa .progress-bar__item {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 30px;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media (max-width:767px) {
+    body.fa .progress-bar__item {
+        margin: 0 3px
+    }
+}
+
+body.fa .progress-bar__circle {
+    height: 28px;
+    width: 28px;
+    min-width: 28px;
+    border: 2px solid #979797;
+    border-radius: 50%;
+    margin-right: 11px;
+    position: relative
+}
+
+body.fa .progress-bar__circle:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-bottom: 2px solid #979797;
+    border-right: 2px solid #979797;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    transform: rotate(-45deg)
+}
+
+body.fa .progress-bar__circle--complete {
+    background-color: #ffb400;
+    border: 2px solid #ffb400;
+    position: relative
+}
+
+body.fa .progress-bar__circle--complete:before {
+    content: "";
+    height: 15px;
+    width: 7px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    transform: rotate(45deg)
+}
+
+@media (max-width:767px) {
+    body.fa .progress-bar__circle--complete:before {
+        height: 11px;
+        width: 6px;
+        top: 5px;
+        left: 8px
+    }
+}
+
+body.fa .progress-bar__circle--complete+.progress-bar__label {
+    color: #fff
+}
+
+body.fa .progress-bar__circle--incomplete {
+    background: #979797;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative
+}
+
+body.fa .progress-bar__circle--incomplete:before {
+    content: "";
+    height: 2px;
+    width: 60%;
+    background: #fff;
+    border: none;
+    display: block;
+    top: 11px;
+    left: 5px;
+    right: -12px;
+    transform: none
+}
+
+body.fa .progress-bar__label {
+    letter-spacing: .16px;
+    color: #979797;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding-bottom: 6px;
+    font-size: 14px
+}
+
+body.fa .progress-bar__circle--complete .progress-bar__label {
+    color: #ff4a14
+}
+
+#rep_custom_banner {
+  background: #440099;
+  border-top: 1px solid #e5e5e5;
+  box-shadow: 0px 0px 5px 0px #5a5a5a;
+  color: #2c2c2c;
+  display: none;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000000000;
+}

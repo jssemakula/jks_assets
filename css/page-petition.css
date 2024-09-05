@@ -1,0 +1,45 @@
+.page-sign-petition-page.page-header {
+  padding-top: 61px;
+  padding-bottom: 0;
+}
+
+.page-sign-petition-page.page-header .custom-title {
+  max-width: 90%;
+  font-size: 1.75rem;
+  margin: 20px 0 10px 0;
+}
+
+@media (min-width: 575px) {
+  .page-sign-petition-page.page-header .custom-title {
+    font-size: 2.5rem;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-sign-petition-page.page-header .custom-title {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-sign-petition-page.page-header .custom-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1480px) {
+  .page-sign-petition-page.page-header .custom-title {
+    font-size: 4.125rem;
+    margin-top: 90px;
+  }
+}
+
+.page-sign-petition-page.page-header .subhead-custom-title.normaltxt {
+  font-weight: normal;
+}
+
+.page-sign-petition-page.page-header .subhead-custom-title.normaltxt span {
+  font-weight: bold;
+}
