@@ -1,0 +1,592 @@
+
+	/* Styles From UI */
+	    /* Font Families */
+/* Font Families */
+        @font-face {
+            font-family: Sohne Leicht, 'Soehne';
+        }
+        
+        @font-face {
+        	/*font-family: Sohne Halbfett, 'Soehne';*/
+        	font-family: Sohne Leicht, 'Soehne';
+        }
+        
+        * {
+        	/*font-family: Sohne Halbfett, 'Soehne';*/
+        	font-family: Sohne Leicht, 'Soehne';
+        	color: #45423f;
+        }
+        /*
+        h1 {
+        	font-family: Sohne Halbfett, 'Soehne';
+        	color: #2e2c2a;
+        }
+        */
+        
+       h1,h2,h3,h4,h5,h6 {
+        	font-family: Sohne Halbfett, 'Soehne' !important;
+        	/*font-family: Sohne Leicht, 'Soehne';*/
+        	font-weight: 600 !important;
+        	color: #45423f !important;
+        	line-height: 1.25em !important;
+        	margin-bottom: 0.5em !important;
+        }
+        
+        b,strong {
+        font-family: Sohne Halbfett, 'Soehne' !important;
+        font-weight: bolder !important;
+        }
+        
+/*        
+        a {
+            color: ${blueprint~link-text-color};
+        }
+        
+*/ 
+
+
+a {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+        font-style: normal;
+        color: #5c0fff;
+        transition: all 75ms ease-in-out;
+        /* padding: 0.125rem 0.25rem; */
+    }
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+        font-style: normal;
+        color: #409;
+    }
+    a:focus {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+        font-style: normal;
+        color: #409;
+        background-color: #ffb400;
+    }
+	
+    /* targetted font-family css */
+    
+    span[data-token="amount-total"] {
+  font-family: 'Sohne Halbfett', sans-serif;
+    }
+    
+    #giftAidAmount {
+  font-family: 'Sohne Halbfett', sans-serif;
+    }    
+	
+
+        /* Header Background */
+        header {
+        	/* background: #440099; */
+        	/* background: #440099; */
+        	background: transparent; 
+			box-shadow: none !important;
+        }
+        
+        /* Header Logo Width (rem) */
+        header img {
+        	width: ${blueprint~header-logo-width};
+        	margin-left: 10px;
+        }
+
+    
+        /* Default Text Color */
+        main {
+        	color: ${blueprint~default-text-color};
+        }
+				
+        
+        /* remove padding on main*/
+        main {
+            overflow: hidden;
+            padding: 0 !important;
+            position: relative;
+            }
+            
+         main>img{
+              /*object-fit: contain !important;*/
+              /*object-position: right !important;*/
+         }
+            
+        .inner-wrap {
+            margin: 0 auto;
+            width: 100% !important;
+        }    
+        
+        /* Form Wrapper */
+        #form-wrap {
+        /*	background: #f2ede8; */
+        	/* border-radius: 1rem; */
+        /*	max-width: 58rem !important; */
+        }
+        
+        /* Form Wrapper */
+        #form-wrap {
+        	/*background: ${blueprint~form-wrapper-background-color};*/
+        	/* border-radius: ${blueprint~border-radii}; */
+        	/*max-width: 58rem !important; */
+        }
+		
+        .inner-wrap {
+            margin: 0 auto;
+            /* width: 95%; */
+        }
+        
+        
+        
+         /* Scrollable inner content */
+.inner-wrap {
+  max-height: 100vh;
+  overflow-y: auto !important;
+  
+  /* Hide scrollbar for Webkit (Chrome, Safari) */
+  /*scrollbar-width: none;*/ /* Firefox */
+  
+}
+
+.inner-wrap::-webkit-scrollbar {
+  /*display: none; */ /* Chrome, Safari, Opera */
+}
+
+        
+        /* Footer Background Color */
+        footer {
+        	background-color: ${blueprint~footer-background-color};
+        }
+        
+        /* Errors */
+        .en__field__error,
+        .en__errorHeader,
+        .en__errorList {
+        	color: ${blueprint~error-text-color};
+        	font-size: ${blueprint~error-text-size};
+        }
+        
+        .en__field--validationFailed > label {
+        	color: ${blueprint~error-text-color};
+        }
+        
+        .en__field--validationFailed input,
+        .en__field--validationFailed select,
+        .en__field--validationFailed textarea {
+        	border-color: ${blueprint~error-text-color} !important;
+        	background-color: ${blueprint~error-field-background};
+        }
+        
+        /* Mandatory Asterisk */
+        .en__mandatory label::after {
+        	color: ${blueprint~error-text-color};
+        }
+        
+        /* Form Border Color */
+        .en__field__element input:not([type="checkbox"]),
+        .en__field__element select,
+        .en__field__element textarea {
+        	border: .1rem solid ${blueprint~input-border-color};
+        	border-radius: ${blueprint~border-radii};
+        }
+        
+
+  
+        /* Submit Button */
+        .en__submit button {
+        	border-radius: ${blueprint~border-radii};
+        	background: ${blueprint~submit-button-background};
+        	color: ${blueprint~submit-button-text-color};
+        }
+        
+        .en__submit button:hover {
+        	background: ${blueprint~submit-button-hover-background};
+        }
+        
+        .en__submit button {
+          width:100%;
+          border: 2px solid rgba(46, 44, 42) !important;
+        }        
+        
+        /*general label text alignment*/
+ .en__field--donationAmt label {
+    text-align: left !important;
+}
+        
+        /* Amount & Recurring Frequency Radio Buttons - Current Selection */
+        .en__field--recurrpay input.en__field__input--radio:checked + label,
+        .en__field--recurrfreq input.en__field__input--radio:checked + label,
+        .en__field--donationAmt input.en__field__input--radio:checked + label {
+        	background: ${blueprint~amounts-button-selected-background};
+        	color: ${blueprint~amounts-button-selected-color};
+        	border-color: ${blueprint~amounts-button-selected-border};
+        	text-transform: capitalize !important;
+        	font-family: Sohne Halbfett, 'Soehne';
+        }
+        
+        /* Amount & Recurring Frequency Radio Buttons - Not Selected */
+        .en__field--recurrpay label.en__field__label--item,
+        .en__field--recurrfreq label.en__field__label--item,
+        .en__field--donationAmt label.en__field__label--item {
+        	background: ${blueprint~amounts-button-unselected-background};
+        	color:${blueprint~amounts-button-unselected-color};
+        	border-radius: ${blueprint~border-radii};
+        	border: .2rem solid ${blueprint~amounts-button-unselected-border};
+        	text-transform: capitalize !important;
+        	text-align: center !important;
+        	font-family: Sohne Halbfett, 'Soehne';
+        }
+        
+		/* hover - Amount & Recurring Frequency Radio Buttons not selected */
+        .en__field--recurrpay label.en__field__label--item:hover,
+        .en__field--recurrfreq label.en__field__label--item:hover,
+        .en__field--donationAmt:hover label.en__field__label--item:hover {
+        	/*background: #440099;*/
+        	background: #F2EDE8;
+			/*color:#fff;*/
+			color:#552037;
+        	/*border: .2rem solid #440099;*/
+        	/*border: .2rem solid #F2EDE8;*/
+        	border: .2rem solid #552037;
+            text-transform: capitalize !important;	
+        }
+ 
+        /* Amount & Recurring Frequency Radio Buttons - Current Selection */
+        .en__field--recurrpay input.en__field__input--radio:checked + label:hover,
+        .en__field--recurrfreq input.en__field__input--radio:checked + label:hover,
+        .en__field--donationAmt input.en__field__input--radio:checked + label:hover {
+        	background: #440099;
+			color:#fff;
+        	border: .2rem solid #440099;
+            text-transform: capitalize !important;	
+            font-family: Sohne Halbfett, 'Soehne';
+        }  
+        
+        		/* donation button amounts width*/
+		
+.en__field--donationAmt div.en__field__element--radio{
+  display: flex;
+  /*flex-wrap: nowrap !important; */
+  flex-wrap: wrap !important;
+  justify-content: space-between;
+  gap: 10px !important;
+}		
+		
+.en__field label {
+  width: 100%;
+ /* padding-top: 10px; */
+  margin-top: 5px;		
+ /* margin-bottom: 5px;*/		
+}		
+
+.en__field--donationAmt div.en__field__element--radio, .en__field--donationAmt label, .en__field--recurrfreq div.en__field__element--radio, .en__field--recurrfreq label, .en__field--recurrpay div.en__field__element--radio, .en__field--recurrpay label {
+    max-width: none;
+    text-align: center !important;
+    width: 100%;
+}    
+    
+    
+en__field--donationAmt div.en__field__element--radio, .en__field--donationAmt label, .en__field--recurrfreq div.en__field__element--radio, .en__field--recurrfreq label, .en__field--recurrpay div.en__field__element--radio, .en__field--recurrpay label {
+    max-width: none;
+    /* text-align: center; */
+	text-align: left !important;
+    width: 100%;
+} 
+    
+    
+.en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden), .en__field--recurrfreq div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden), .en__field--recurrpay div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: inherit !important;
+}
+
+.en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) input.en__field__input--other {
+padding-left: 2.1rem !important;
+}
+
+        
+        /* Currency Symbol */
+        .en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden)::after,
+        .en__field--recurrfreq div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden)::after {
+            content: "${blueprint~currency-symbol}";
+        }
+  
+/* radio css adapted*/
+/*
+.en__field__element input[type="radio"] {
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 50%;
+  border: 2px solid rgba(236, 228, 221, 1);
+  background-color: #fff;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+.en__field__element input[type="radio"]:checked {
+  background-color: #FF6900;
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+*/
+
+.en__field__item .en__field__item--other {
+		display:block !important;
+}
+
+/* alternative radio button css */
+
+.en__field__element input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 50%;
+  border: 2px solid rgba(236, 228, 221, 1); /* Light gray default */
+  background-color: #fff;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Checked state: orange fill, white dot */
+.en__field__element input[type="radio"]:checked {
+  background-color: #FF6900;
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* Focus state: orange border, white ring, orange glow */
+.en__field__element input[type="radio"]:focus {
+  outline: none;
+  border: 4px solid #FF6900;
+  box-shadow:
+    0 0 0 4px #fff,
+    0 0 0 8px rgba(255, 105, 0, 1);
+}
+
+/* Focus + Checked: white background with white dot (inner dot stays white) */
+.en__field__element input[type="radio"]:focus:checked {
+  background-color: #FF6900; /* Keep orange outer */
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+}
+
+
+
+/* checkbox styling*/
+[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #fff;
+  border: 2px solid rgba(236, 228, 221, 1);
+  border-radius: 0.25rem;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-origin: border-box;
+  user-select: none;
+  background-size: 150%;
+}
+
+/* Checked state */
+[type='checkbox']:checked {
+  background-color: rgba(255, 105, 0, 1);  /* Bright orange */
+  /*background-color: rgba(169,169,169); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='20' viewBox='0 0 26 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.74924 15.9073L2.84174 9.99978L0.830078 11.9973L8.74924 19.9164L25.7492 2.91645L23.7517 0.918945L8.74924 15.9073Z' fill='white'/%3E%3C/svg%3E");
+  border-color: transparent;
+  color: currentColor;
+}
+[type='checkbox'].en__field__input--checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  background-size: 70%;
+}
+
+
+
+
+/* Media queries */
+
+/*
+@media (min-width: 768px) {
+#form-wrap {
+    background: #f2ede8 !important;
+    max-width: 76rem !important;
+}
+}
+*/
+
+/*
+@media (min-width: 820px) {
+#form-wrap {
+    background: #f2ede8 !important;
+    max-width: 101rem !important;
+}
+}
+*/
+
+/* ipad pro */
+/*
+@media (min-width: 1024px) {
+#form-wrap {
+    background: #f2ede8 !important;
+    max-width: 126rem !important;
+}
+}
+*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+#form-wrap {
+    background: #f2ede8 !important;
+    max-width: 126rem !important;
+}
+}
+
+/*
+@media only screen 
+    and (min-width: 1920px) {
+#form-wrap {
+    background: #f2ede8;
+    max-width: 58rem !important;
+}
+}
+*/
+
+@media only screen 
+    and (min-width: 2000px) {
+    /*and (max-device-width: 2560px)*/ 
+#form-wrap {
+    background: #f2ede8;
+    /*max-width: 68rem !important;*/
+    max-width: 89rem !important;
+}
+}
+
+/*
+@media screen and (max-width: 2560px) {
+#form-wrap {
+    background: #f2ede8;
+    max-width: 68rem !important;
+}
+}
+*/
+
+
+#logo {
+text-align: right;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 10;
+}
+
+.logo img{
+width: 16rem;
+
+} 
+
+/*background image div */ 
+
+	 .bkgimg-div {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      z-index: -10;
+      /* z-index: 0; */
+    }
+
+    .bkgimg-div::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 30%; /* matches fixed-div width */
+      width: 70vw;
+      height: 100vh;
+      
+	 /*
+	  background-image: url('https://www.asthmaandlung.org.uk/sites/default/files/styles/max_2600x2600/public/2024-10/2024%20A%2BLUK%20website%20image09.jpg.webp?itok=3JqgPne0');
+	  */
+	  
+	  background-image: url('${blueprint~main-bg-image}');
+      
+	  background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+
+
+/* checkbox styling*/
+[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #fff;
+  border: 2px solid rgba(236, 228, 221, 1);
+  border-radius: 0.25rem;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-origin: border-box;
+  user-select: none;
+  background-size: 150%;
+}
+
+/* Checked state */
+[type='checkbox']:checked {
+  background-color: rgba(255, 105, 0, 1);  /* Bright orange */
+  /*background-color: rgba(169,169,169); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='20' viewBox='0 0 26 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.74924 15.9073L2.84174 9.99978L0.830078 11.9973L8.74924 19.9164L25.7492 2.91645L23.7517 0.918945L8.74924 15.9073Z' fill='white'/%3E%3C/svg%3E");
+  border-color: transparent;
+  color: currentColor;
+}
+[type='checkbox'].en__field__input--checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  background-size: 70%;
+}
+
+/*flexbox css for larger screens*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}

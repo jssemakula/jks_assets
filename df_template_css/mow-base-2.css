@@ -1,0 +1,460 @@
+*,:after,:before {
+    box-sizing: border-box
+}
+
+.en__field__item.en__field__item--hidden,.en__hidden {
+    display: none!important
+}
+
+.en__field {
+    margin: 0 auto;
+    max-width: 100%
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+code,kbd,samp {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,input,optgroup,select,textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,input {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+[type=button],[type=reset],[type=submit],button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+[hidden],template {
+    display: none
+}
+
+html {
+    font-size: 62.5%
+}
+
+blockquote,button,dd,div,dl,dt,fieldset,figure,h5,img,input,label,legend,li,ol,p,pre,select,textarea,ul {
+    font-size: clamp(1.6rem,calc(1.46656rem + .278vw),1.8rem);
+    line-height: 1.6em
+}
+
+blockquote,dd,dl,dt,li,ol,p,ul {
+    margin-bottom: 1em
+}
+
+h1,h2,h3,h4 {
+    font-weight: 600;
+    line-height: 1.25em;
+    margin-bottom: .5em
+}
+
+h4 {
+    font-size: clamp(1.92rem,calc(1.76016rem + .333vw),2.16rem)
+}
+
+h3 {
+    font-size: clamp(2.304rem,calc(2.112rem + .4vw),2.592rem)
+}
+
+h2 {
+    font-size: clamp(2.765rem,calc(2.53508rem + .479vw),3.11rem)
+}
+
+h1 {
+    font-size: clamp(3.318rem,calc(3.042rem + .575vw),3.732rem)
+}
+
+.en__field,.en__field__element,.en__field label {
+    width: 100%
+}
+
+.en__field__element input:not([type=checkbox]):not([type=radio]),.en__field__element select {
+    min-width: auto;
+    padding: .5rem 1.2rem;
+    width: 100%
+}
+
+.en__field__element select {
+    padding: 1rem 1.2rem
+}
+
+.en__field__element--checkbox,.en__field__element--radio {
+    width: 100%
+}
+
+.en__field__element--checkbox .en__field__item,.en__field__element--radio .en__field__item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.en__field__element--checkbox .en__field__label,.en__field__element--radio .en__field__label {
+    max-width: none
+}
+
+.en__field__element--checkbox .en__field__input--checkbox,.en__field__element--checkbox .en__field__input--radio,.en__field__element--radio .en__field__input--checkbox,.en__field__element--radio .en__field__input--radio {
+    height: 2rem;
+    width: 2rem
+}
+
+.en__field--checkbox,.en__field--radio,.en__field__input--checkbox,.en__field__input--radio {
+    margin-right: 1.5rem
+}
+
+.en__field__element--textarea textarea {
+    min-height: 10rem;
+    resize: vertical;
+    width: 100%
+}
+
+.en__field__element--splitselect,.en__field__element--splittext {
+    grid-gap: 1rem;
+    display: flex;
+    gap: 1rem
+}
+
+.en__field__element--splitselect .en__field__item,.en__field__element--splittext .en__field__item {
+    width: 100%
+}
+
+.en__submit {
+    margin-top: 2.5rem;
+    text-align: center
+}
+
+.en__submit button {
+    border: none;
+    font-weight: 600;
+    padding: 1.1rem 3rem;
+    text-align: center
+}
+
+.en__mandatory>label:after {
+    content: "*"
+}
+
+.en__field__element.en__field__element--tripleselect,.en__field__element.en__field__element--tripletext {
+    grid-gap: 1rem;
+    display: flex;
+    gap: 1rem
+}
+
+.en__field--question label>:first-child {
+    margin-top: 0
+}
+
+.en__field--question label>:last-child {
+    margin-bottom: 0
+}
+
+.en__field__error {
+    width: 100%
+}
+
+.en__errorList {
+    padding-left: 2rem
+}
+
+.inner-wrap {
+	/*
+    margin: 0 auto;
+    width: 95%
+	*/
+}
+
+header {
+    box-shadow: 0 0 .4rem .4rem rgba(0,0,0,.4);
+    position: relative;
+    width: 100%
+}
+
+header img {
+    margin-bottom: 2.5rem;
+    margin-top: 3rem
+}
+
+main {
+    overflow: hidden;
+    padding: 5rem 0;
+    position: relative
+}
+
+main>img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+#form-wrap {
+    box-shadow: .3rem .3rem 1rem 0 rgba(0,0,0,.4);
+    box-sizing: border-box;
+    max-width: 48rem;
+    padding: 4rem;
+    width: 100%
+}
+
+#navigation-indicator {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem
+}
+
+#navigation-indicator .navigation-indicator__page {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    line-height: 1.2;
+    padding-bottom: .4rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 3rem
+}
+
+@media screen and (max-width: 480px) {
+    #navigation-indicator .navigation-indicator__page {
+        font-size:0
+    }
+}
+
+footer {
+    padding: 4.5rem 0
+}
+
+footer .inner-wrap {
+    display: flex;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 768px) {
+    footer .inner-wrap {
+        flex-direction:column
+    }
+
+    footer .inner-wrap div {
+        margin-bottom: 1rem;
+        margin-top: 1rem
+    }
+}
+
+footer .inner-wrap div:nth-child(2) {
+    padding: 0 5rem
+}
+
+@media screen and (max-width: 768px) {
+    footer .inner-wrap div:nth-child(2) {
+        padding:0
+    }
+}
+
+.en__field--donationAmt,.en__field--recurrfreq,.en__field--recurrpay {
+    flex-direction: column;
+    margin: 0 auto
+}
+
+.en__field--donationAmt div.en__field__element--radio,.en__field--donationAmt label,.en__field--recurrfreq div.en__field__element--radio,.en__field--recurrfreq label,.en__field--recurrpay div.en__field__element--radio,.en__field--recurrpay label {
+    max-width: none;
+    text-align: center;
+    width: 100%
+}
+
+.en__field--donationAmt label:after,.en__field--recurrfreq label:after,.en__field--recurrpay label:after {
+    display: none
+}
+
+.en__field--donationAmt div.en__field__element--radio,.en__field--recurrfreq div.en__field__element--radio,.en__field--recurrpay div.en__field__element--radio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.en__field--donationAmt div.en__field__element--radio .en__field__item,.en__field--recurrfreq div.en__field__element--radio .en__field__item,.en__field--recurrpay div.en__field__element--radio .en__field__item {
+    margin-bottom: 1rem;
+    padding: 0;
+    width: calc(50% - .5rem)
+}
+
+.en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden),.en__field--recurrfreq div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden),.en__field--recurrpay div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) {
+    align-items: center;
+    display: flex;
+    position: relative
+}
+
+.en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden):after,.en__field--recurrfreq div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden):after,.en__field--recurrpay div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden):after {
+    font-size: 1.8rem;
+    left: 1rem;
+    position: absolute
+}
+
+.en__field--donationAmt div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) input.en__field__input--other,.en__field--recurrfreq div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) input.en__field__input--other,.en__field--recurrpay div.en__field__element--radio .en__field__item.en__field__item--other:not(.en__field__item--hidden) input.en__field__input--other {
+    font-size: 1.8rem;
+    padding-left: 1.8rem
+}
+
+.en__field--donationAmt input.en__field__input--radio,.en__field--recurrfreq input.en__field__input--radio,.en__field--recurrpay input.en__field__input--radio {
+    left: -10000px;
+    position: absolute;
+    z-index: -1
+}
+
+.en__field--donationAmt input.en__field__input--radio:focus+label,.en__field--recurrfreq input.en__field__input--radio:focus+label,.en__field--recurrpay input.en__field__input--radio:focus+label {
+    outline: 2px solid rgba(0,0,0,.7)
+}
+
+.en__field--donationAmt label.en__field__label--item,.en__field--recurrfreq label.en__field__label--item,.en__field--recurrpay label.en__field__label--item {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-transform: uppercase
+}
+
+.en__field--donationAmt .en__field__input--other,.en__field--recurrfreq .en__field__input--other,.en__field--recurrpay .en__field__input--other {
+    height: 100%;
+    margin: 0
+}
