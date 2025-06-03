@@ -1,0 +1,27 @@
+    .container {
+      display: flex;
+    }
+    .fixed-div {
+      width: 30%;
+    }
+    .stretch-div {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .stretch-div::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 30%; /* matches fixed-div width */
+      width: 70vw;
+      height: 100vh;
+      background-image: url('https://www.asthmaandlung.org.uk/sites/default/files/styles/max_2600x2600/public/2024-10/2024%20A%2BLUK%20website%20image09.jpg.webp?itok=3JqgPne0');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+      pointer-events: none;
+    }
