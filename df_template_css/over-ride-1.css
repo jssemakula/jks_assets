@@ -366,7 +366,7 @@ width: 16rem;
       content: '';
       position: fixed;
       top: 0;
-      left: 30%; /* matches fixed-div width */
+      left: 40%; /* matches fixed-div width */
       width: 70vw;
       height: 100vh;
       
