@@ -386,6 +386,55 @@ width: 16rem;
       pointer-events: none;
     }
 
+.en__field__item .en__field__item--other {
+		display:block !important;
+}
+
+/* alternative radio button css */
+
+.en__field__element input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 50%;
+  border: 2px solid rgba(236, 228, 221, 1); /* Light gray default */
+  background-color: #fff;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Checked state: orange fill, white dot */
+.en__field__element input[type="radio"]:checked {
+  background-color: #FF6900;
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* Focus state: orange border, white ring, orange glow */
+.en__field__element input[type="radio"]:focus {
+  outline: none;
+  border: 4px solid #FF6900;
+  box-shadow:
+    0 0 0 4px #fff,
+    0 0 0 8px rgba(255, 105, 0, 1);
+}
+
+/* Focus + Checked: white background with white dot (inner dot stays white) */
+.en__field__element input[type="radio"]:focus:checked {
+  background-color: #FF6900; /* Keep orange outer */
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+}
+
+
 
 /* checkbox styling*/
 [type='checkbox'] {
@@ -408,8 +457,8 @@ width: 16rem;
 
 /* Checked state */
 [type='checkbox']:checked {
-  /*background-color: rgba(255, 105, 0, 1); */ /* Bright orange */
-  background-color: rgba(169,169,169);
+  background-color: rgba(255, 105, 0, 1);  /* Bright orange */
+  /*background-color: rgba(169,169,169); */
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='26' height='20' viewBox='0 0 26 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.74924 15.9073L2.84174 9.99978L0.830078 11.9973L8.74924 19.9164L25.7492 2.91645L23.7517 0.918945L8.74924 15.9073Z' fill='white'/%3E%3C/svg%3E");
@@ -422,3 +471,4 @@ width: 16rem;
   border-radius: 0.25rem;
   background-size: 70%;
 }
+
