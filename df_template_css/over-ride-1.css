@@ -6,23 +6,35 @@
         }
         
         @font-face {
-        	font-family: Sohne Halbfett, 'Soehne';
+        	/*font-family: Sohne Halbfett, 'Soehne';*/
+        	font-family: Sohne Leicht, 'Soehne';
         }
         
         * {
-        	font-family: Sohne Halbfett, 'Soehne';
+        	/*font-family: Sohne Halbfett, 'Soehne';*/
+        	font-family: Sohne Leicht, 'Soehne';
         	color: #45423f;
         }
-        
+        /*
         h1 {
-        	font-family:  Sohne Halbfett, 'Soehne';
+        	font-family: Sohne Halbfett, 'Soehne';
         	color: #2e2c2a;
         }
+        */
         
-        h2,h3,h4,h5,h6 {
-        	font-family:  Sohne Halbfett, 'Soehne';
-        	color: #45423f;
-        }        
+       h1,h2,h3,h4,h5,h6 {
+        	font-family: Sohne Halbfett, 'Soehne' !important;
+        	/*font-family: Sohne Leicht, 'Soehne';*/
+        	font-weight: 600 !important;
+        	color: #45423f !important;
+        	line-height: 1.25em !important;
+        	margin-bottom: 0.5em !important;
+        }
+        
+        b,strong {
+        font-family: Sohne Halbfett, 'Soehne' !important;
+        font-weight: bolder !important;
+        }    
         
 /*        
         a {
@@ -53,6 +65,16 @@ a {
         background-color: #ffb400;
     }
 
+        /* targetted font-family css */
+    
+    span[data-token="amount-total"] {
+  font-family: 'Sohne Halbfett', sans-serif;
+    }
+    
+    #giftAidAmount {
+  font-family: 'Sohne Halbfett', sans-serif;
+    }    
+    
         /* Header Background */
         header {
         	/* background: #440099; */
@@ -228,6 +250,7 @@ a {
         	border: .2rem solid #440099;
             text-transform: capitalize !important;	
         }  
+        
         
         		/* donation button amounts width*/
 		
