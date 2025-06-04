@@ -16,7 +16,7 @@
       content: '';
       position: fixed;
       top: 0;
-      left: 40%; /* matches fixed-div width */
+      left: 41%; /* matches fixed-div width */
       width: 70vw;
       height: 100vh;
       background-image: url('https://www.asthmaandlung.org.uk/sites/default/files/styles/max_2600x2600/public/2024-10/2024%20A%2BLUK%20website%20image09.jpg.webp?itok=3JqgPne0');
@@ -39,7 +39,7 @@
     }
 	
     #form-wrap {
-      width: 40% !important;
+      width: 41% !important;
      padding: 4rem;
 	 max-width: none;
    
