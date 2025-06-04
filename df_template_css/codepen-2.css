@@ -39,10 +39,12 @@
     }
 	
     #form-wrap {
+     /* width: 41% !important; */
      width: 41% !important;
      padding: 4rem;
+     /*
 	   max-width: none;
      box-shadow: none !important;
      box-sizing: inherit;
-   
+   */
     }	
