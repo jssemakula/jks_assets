@@ -271,7 +271,7 @@ a {
 
 .en__field--donationAmt div.en__field__element--radio, .en__field--donationAmt label, .en__field--recurrfreq div.en__field__element--radio, .en__field--recurrfreq label, .en__field--recurrpay div.en__field__element--radio, .en__field--recurrpay label {
     max-width: none;
-    text-align: center !important;
+    text-align: left !important;
     width: 100%;
 }    
     
@@ -297,36 +297,37 @@ padding-left: 2.1rem !important;
             content: "£";
         }
   
- .en__field__element input[type="radio"] {
-    accent-color: #FF6900; 
-    width: 18px; /* Adjust size */
-    height: 18px;
-    border: 2px solid #FF6900; 
-    border-radius: 50%; /* Makes it round */
-    appearance: none;
-    background-color: white; /* Default background */
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
+ 
+/*
+.en__field__element input[type="radio"] {
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 50%;
+  border: 2px solid rgba(236, 228, 221, 1);
+  background-color: #fff;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
 }
 
-.en__field__element input[type="radio"]::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #FF6900; /* Inner dot color */
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
+.en__field__element input[type="radio"]:checked {
+  background-color: #FF6900;
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.en__field__element input[type="radio"]:checked::before {
-    display: block; /* Show inner dot when selected */
-}
+*/
+
 
 .en__field__item .en__field__item--other {
 		display:block !important;
