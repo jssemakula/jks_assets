@@ -337,8 +337,7 @@ padding-left: 2.1rem !important;
 
 #form-wrap {
     background: #f2ede8;
-    /* max-width: 104rem !important; */
-    width: 100%;
+    width: 100% !important;
 }
 
 }
