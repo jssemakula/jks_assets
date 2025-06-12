@@ -364,6 +364,10 @@ padding-left: 2.1rem !important;
     width: 100% !important;
 }
 
+.bkgimg-div::before {
+ width: 0vw !important;   
+}
+
 }
 
 
