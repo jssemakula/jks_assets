@@ -465,7 +465,7 @@ width: 16rem;
 
 
 /* checkbox styling*/
-[type='checkbox'] {
+[type='checkbox'].en__field__input--checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -484,7 +484,7 @@ width: 16rem;
 }
 
 /* Checked state */
-[type='checkbox']:checked {
+[type='checkbox']:checked.en__field__input--checkbox {
   background-color: rgba(255, 105, 0, 1);  /* Bright orange */
   /*background-color: rgba(169,169,169); */
   background-position: center;
